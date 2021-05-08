@@ -1,0 +1,117 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT MusicStore (StoreDetails,Music+,Footer)>
+<!ATTLIST MusicStore
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT StoreDetails (Logo,StoreName,Website,sTelephone,sEmail,
+                        sAddress)>
+<!ATTLIST StoreDetails
+  xmlns CDATA #FIXED ''
+  AddressId NMTOKEN #REQUIRED
+  StoreId NMTOKEN #REQUIRED>
+
+<!ELEMENT Music (Image,Title,price,ReleaseDate,Singer,Director,Producer,
+                 Writer,Genre,Language,buy,rent)>
+<!ATTLIST Music
+  xmlns CDATA #FIXED ''
+  MusicId NMTOKEN #REQUIRED
+  Type NMTOKEN #REQUIRED>
+
+<!ELEMENT Footer (#PCDATA)>
+<!ATTLIST Footer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Logo EMPTY>
+<!ATTLIST Logo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT StoreName (#PCDATA)>
+<!ATTLIST StoreName
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Website (#PCDATA)>
+<!ATTLIST Website
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT sTelephone (#PCDATA)>
+<!ATTLIST sTelephone
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT sEmail (#PCDATA)>
+<!ATTLIST sEmail
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT sAddress (#PCDATA)>
+<!ATTLIST sAddress
+  xmlns CDATA #FIXED ''
+  AddressId NMTOKEN #REQUIRED>
+
+<!ELEMENT Image EMPTY>
+<!ATTLIST Image
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Title (#PCDATA)>
+<!ATTLIST Title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ReleaseDate (#PCDATA)>
+<!ATTLIST ReleaseDate
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Singer (Name,Contact?)>
+<!ATTLIST Singer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Director (#PCDATA)>
+<!ATTLIST Director
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Producer (#PCDATA)>
+<!ATTLIST Producer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Writer (Name,Contact?)>
+<!ATTLIST Writer
+  xmlns CDATA #FIXED ''
+  Gender NMTOKEN #REQUIRED>
+
+<!ELEMENT Genre (#PCDATA)>
+<!ATTLIST Genre
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Language (#PCDATA)>
+<!ATTLIST Language
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT buy (#PCDATA)>
+<!ATTLIST buy
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rent (#PCDATA)>
+<!ATTLIST rent
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Name (#PCDATA)>
+<!ATTLIST Name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Contact (Telephone?,City,Country)>
+<!ATTLIST Contact
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Telephone (#PCDATA)>
+<!ATTLIST Telephone
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT City (#PCDATA)>
+<!ATTLIST City
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Country (#PCDATA)>
+<!ATTLIST Country
+  xmlns CDATA #FIXED ''>

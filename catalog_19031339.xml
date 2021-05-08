@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE MusicStore SYSTEM "catalog_19031339.dtd">
+<?xml-stylesheet type="text/css" href="cw.css"?>
+
+<!-- Starting the root element -->
+<MusicStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19031339.xsd">
+
+	<!-- details of the store -->
+	<StoreDetails StoreId="ms1" AddressId= "add1">
+		<Logo></Logo>
+		<StoreName>Let's Listen</StoreName>
+		<Website>https://www.llms.com</Website>
+		<sTelephone>Telephone: +977 412345</sTelephone>
+		<sEmail>Email: llms007@gmail.com</sEmail>
+		<sAddress AddressId="add1">Visit Us: Budhanilkantha-18, Kathmandu, Nepal</sAddress>
+	</StoreDetails>
+
+ <!-- Songs to be sold in the music store along with their details. -->
+
+	<Music MusicId="mu1" Type="mp3">
+    	<Image></Image>
+			<Title>Blank Space</Title>
+			<price>Price: $1.39 || Rent: $0.30/day</price>
+			<ReleaseDate>Release Date: 2014</ReleaseDate>
+			<Singer>
+				<Name>Vocal Artist: Taylor Swift ⬇</Name>
+				<Contact>
+					<Telephone>Phone: (615) 324-7777</Telephone>
+					<City>City: West Reading</City>
+          <Country>Country: USA</Country>
+				</Contact>
+			</Singer>
+			<Director>Directed By: Joseph Kahn</Director>
+			<Producer>Produced By: Max Martin</Producer>
+			<Writer Gender="Female">
+				<Name>Written By: Taylor Swift ⬇</Name>
+				<Contact>
+					<Telephone>Phone: (615) 324-7777</Telephone>
+          <City>City: West Reading</City>
+          <Country>Country: USA</Country>
+				</Contact>
+			</Writer>
+			<Genre>Genre: Electropop</Genre>
+			<Language>Language: English</Language>
+			<buy>Buy</buy>
+			<rent>Rent</rent>
+	</Music>
+
+	<Music MusicId="mu2" Type="mp3">
+    	<Image></Image>
+			<Title>Love Story</Title>
+			<price>Price: $1.99 || Rent: $0.42/day</price>
+			<ReleaseDate>Release Date: September 12, 2008</ReleaseDate>
+			<Singer>
+				<Name>Vocal Artist: Taylor Swift ⬇</Name>
+				<Contact>
+					<Telephone>Phone: (615) 324-7777</Telephone>
+					<City>City: West Reading</City>
+          <Country>Country: USA</Country>
+				</Contact>
+			</Singer>
+			<Director>Directed By: Trey Fanjoy</Director>
+			<Producer>Produced By: Nathan Chapman, Taylor Swift</Producer>
+			<Writer Gender="Female">
+				<Name>Written By: Taylor Swift ⬇</Name>
+				<Contact>
+					<Telephone>Phone: (615) 324-7777</Telephone>
+          <City>City: West Reading</City>
+          <Country>Country: USA</Country>
+				</Contact>
+			</Writer>
+			<Genre>Genre: Country pop</Genre>
+			<Language>Language: English</Language>
+			<buy>Buy</buy>
+			<rent>Rent</rent>
+	</Music>
+
+	<Music MusicId="mu3" Type="mp4">
+    	<Image></Image>
+			<Title>Despacito</Title>
+			<price>Price: $2.39 || Rent: $0.75/day</price>
+			<ReleaseDate>Release Date: January 12, 2017</ReleaseDate>
+			<Singer>
+				<Name>Vocal Artist: Luis Fonsi ft. Daddy Yankee</Name>
+			</Singer>
+			<Director>Directed By: Carlos Pérez</Director>
+			<Producer>Produced By: Mauricio RengifoAndrés Torres</Producer>
+			<Writer Gender="Male">
+				<Name>Written By: Luis RodríguezErika EnderRamón Ayala </Name>
+			</Writer>
+			<Genre>Genre: Reggaeton, Latin pop</Genre>
+			<Language>Language: Spanish</Language>
+			<buy>Buy</buy>
+			<rent>Rent</rent>
+	</Music>
+
+	<Music MusicId="mu4" Type="mp4">
+    	<Image></Image>
+			<Title>The Night We Met</Title>
+			<price>Price: $2.03 || Rent: $0.64/day</price>
+			<ReleaseDate>Release Date: 24 April 2017</ReleaseDate>
+			<Singer>
+				<Name>Vocal Artist: Lord Huron ⬇</Name>
+				<Contact>
+					<City>City: 	Michigan</City>
+          <Country>Country: USA</Country>
+				</Contact>
+			</Singer>
+			<Director>Directed By: Ben Schneider</Director>
+			<Producer>Produced By: Ben Schneider</Producer>
+			<Writer Gender="Female">
+				<Name>Written By: Ben Schneider ⬇</Name>
+				<Contact>
+					<Telephone>Phone: 954-441-6844</Telephone>
+          <City>City: Bristol, Georgia</City>
+          <Country>Country: USA</Country>
+				</Contact>
+			</Writer>
+			<Genre>Genre: Folk rock</Genre>
+			<Language>Language: English</Language>
+			<buy>Buy</buy>
+			<rent>Rent</rent>
+	</Music>
+
+	<Music MusicId="mu5" Type="mp3">
+    	<Image></Image>
+			<Title>Shape of You</Title>
+			<price>Price: $2.33 || Rent: $0.63/day</price>
+			<ReleaseDate>Release Date: 6 January 2017</ReleaseDate>
+			<Singer>
+				<Name>Vocal Artist: Ed Sheeran ⬇</Name>
+				<Contact>
+					<Telephone>Phone: 91-11-23978046.</Telephone>
+					<City>City: West Yorkshire</City>
+          <Country>Country: England</Country>
+				</Contact>
+			</Singer>
+			<Director>Directed By: </Director>
+			<Producer>Produced By: Ed Sheeran, Steve Mac</Producer>
+			<Writer Gender="Male">
+				<Name>Written By: Ed SheeranSteve Mac</Name>
+			</Writer>
+			<Genre>Genre: Pop, dancehall, tropical house</Genre>
+			<Language>Language: English</Language>
+			<buy>Buy</buy>
+			<rent>Rent</rent>
+	</Music>
+
+	<Music MusicId="mu6" Type="mp4">
+    	<Image></Image>
+			<Title>2002</Title>
+			<price>Price: $2.00 || Rent: $0.67</price>
+			<ReleaseDate>Release Date: 20 April 2018</ReleaseDate>
+			<Singer>
+				<Name>Vocal Artist: Anne-Marie ⬇</Name>
+				<Contact>
+					<Telephone>Phone: 978-597-8854</Telephone>
+					<City>City: Essex</City>
+          <Country>Country: England</Country>
+				</Contact>
+			</Singer>
+			<Director>Directed By: Hannah Lux Davis</Director>
+			<Producer>Produced By: Steve Mac</Producer>
+			<Writer Gender="Female">
+				<Name>Written By: Anne-Marie</Name>
+			</Writer>
+			<Genre>Genre: Pop</Genre>
+			<Language>Language: English</Language>
+			<buy>Buy</buy>
+			<rent>Rent</rent>
+	</Music>
+
+<!-- Footer part -->
+<Footer>
+	Copyright: @theprajwal007
+</Footer>
+
+</MusicStore>

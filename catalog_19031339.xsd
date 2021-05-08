@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="MusicStore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="StoreDetails"/>
+        <xs:element maxOccurs="unbounded" ref="Music"/>
+        <xs:element ref="Footer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StoreDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Logo"/>
+        <xs:element ref="StoreName"/>
+        <xs:element ref="Website"/>
+        <xs:element ref="sTelephone"/>
+        <xs:element ref="sEmail"/>
+        <xs:element ref="sAddress"/>
+      </xs:sequence>
+      <xs:attribute name="AddressId" use="required" type="xs:NCName"/>
+      <xs:attribute name="StoreId" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Logo">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="StoreName" type="xs:string"/>
+  <xs:element name="Website" type="xs:anyURI"/>
+  <xs:element name="sTelephone" type="xs:string"/>
+  <xs:element name="sEmail" type="xs:string"/>
+  <xs:element name="sAddress">
+    <xs:complexType mixed="true">
+      <xs:attribute name="AddressId" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Music">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Image"/>
+        <xs:element ref="Title"/>
+        <xs:element ref="price"/>
+        <xs:element ref="ReleaseDate"/>
+        <xs:element ref="Singer"/>
+        <xs:element ref="Director"/>
+        <xs:element ref="Producer"/>
+        <xs:element ref="Writer"/>
+        <xs:element ref="Genre"/>
+        <xs:element ref="Language"/>
+        <xs:element ref="buy"/>
+        <xs:element ref="rent"/>
+      </xs:sequence>
+      <xs:attribute name="MusicId" use="required" type="xs:NCName"/>
+      <xs:attribute name="Type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Image">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="Title" type="xs:string"/>
+  <xs:element name="price" type="xs:string"/>
+  <xs:element name="ReleaseDate" type="xs:string"/>
+  <xs:element name="Singer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element minOccurs="0" ref="Contact"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Director" type="xs:string"/>
+  <xs:element name="Producer" type="xs:string"/>
+  <xs:element name="Writer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element minOccurs="0" ref="Contact"/>
+      </xs:sequence>
+      <xs:attribute name="Gender" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Genre" type="xs:string"/>
+  <xs:element name="Language" type="xs:string"/>
+  <xs:element name="buy" type="xs:NCName"/>
+  <xs:element name="rent" type="xs:NCName"/>
+  <xs:element name="Footer" type="xs:string"/>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Contact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Telephone"/>
+        <xs:element ref="City"/>
+        <xs:element ref="Country"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Telephone" type="xs:string"/>
+  <xs:element name="City" type="xs:string"/>
+  <xs:element name="Country" type="xs:string"/>
+</xs:schema>
